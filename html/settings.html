@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Manage extension</title>
+    <meta charset="utf-8"/>
+    <link id="all_style" rel="stylesheet" href="../css/manage_light.css">
+  </head>
+  <body>
+    <header id="head">
+      <a class="logo" href="https://github.com/Arthurprnt/" target="_BLANK"><img src="../assets/icon-svg.svg" width="150" height="100" alt="RAaCOS"></a>
+  </header>
+    <div id="paid" class="paid">
+      <h1>Black & White Browsing settings:</h1>
+      <div class="put_pwd" id="put_pwd">
+        <div class="dark_mode_div">
+          <p class="dark_mode_txt">Use dark mode:</p>
+          <label class="switch" id="switch">
+            <input type="checkbox" id="toggle_darkmode">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="dark_mode_div">
+          <p class="dark_mode_txt">Mask all websites:</p>
+          <label class="switch" id="switch">
+            <input type="checkbox" id="toggle_darkmode">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <p id="hc_conf_1" class="hc_mode_txt">Are you sure ?</p>
+        <p id="hc_conf_2" class="hc_mode_txt">You won't be able to change it in the futur</p>
+        <p id="hc_conf_3" class="hc_mode_txt">Alright, click again to activate it...</p>
+        <p id="hc_conf_4" class="hc_mode_txt">Now this is gonna be fun !</p>
+        <p class="dark_mode_txt">Manage settings:</p>
+        <div class="save_div">
+          <div class="export_btn_div">
+            <button type="button" id="export_btn" class="exp_imp_btn">Export</button>
+          </div>
+          <div id="dnf_save_import_div" class="exp_imp_btn">
+            <label for="dnf_save_file" class="imp_txt">Import</label>
+            <input type="file" id="dnf_save_file" style="visibility: hidden;" accept=".txt"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/settings.js"></script>
+  </body>
+</html>
