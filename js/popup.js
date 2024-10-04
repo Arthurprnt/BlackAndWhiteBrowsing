@@ -30,7 +30,7 @@ let domain = "";
 
 chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
     chrome.storage.local.get().then((result) => {
-        if(result.dfn_use_dark_mode) {
+        if(result.use_dark_mode) {
             swapStyleSheet("../css/popup_dark.css")
         }
     });
@@ -44,13 +44,6 @@ chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
         } else {
             document.getElementById("domain").textContent = domain;
             document.getElementById("favicon").src = tabs[0].favIconUrl;
-            chrome.storage.local.get(["masked_websites"]).then((result) => {
-                for(i=0; i<result.masked_websites.length; i+=1) {
-                    if([result.masked_websites[i], `www.${result.masked_websites[i]}`, result.masked_websites[i].replace("www.", "")].includes(domain)) {
-                        console.log("//")
-                    }
-                }
-            });
         }
     }
 });
