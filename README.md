@@ -1,12 +1,6 @@
-# Black & White Browsing Extension
+# Colorless Browsing Extension
 
 Remove every colors from your browser for a low dopamine experience.
-
-## Chapters
-
-<p>
-  • Coming soon...
-</p>
 
 ## Privacy Policies
 
