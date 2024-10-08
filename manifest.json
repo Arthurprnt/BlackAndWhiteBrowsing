@@ -1,7 +1,7 @@
 {
   "name": "Colorless Browsing",
   "description": "Remove every colors from your browser for a low dopamine experience.",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "manifest_version": 3,
   "action": {
     "default_popup": "html/popup.html",

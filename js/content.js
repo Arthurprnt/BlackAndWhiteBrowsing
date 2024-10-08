@@ -17,6 +17,7 @@ chrome.storage.local.get().then((result) => {
                 finishedReading = true;
             }
         }
+        finishedReading = true;
     }
 })
 
